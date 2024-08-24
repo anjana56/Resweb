@@ -1,0 +1,153 @@
+*{
+    background-color: black;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 10%;
+    /* blur akan */
+    backdrop-filter: blur(50px);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: rgb(201, 201, 212);
+    font-weight: 600;
+}
+#check{
+   display: none;
+}
+.icons{
+    font-size: 2.4rem;
+    color: rgb(208, 208, 216);
+    font-weight: 300;
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+.navbar a{
+    font-size: 1.1rem;
+    color: rgb(175, 175, 187);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 2.5rem;
+}
+.para1{
+    color: white;
+    text-align: center;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+}
+.div{
+    height: 400px;
+    width: 380px;
+    border: solid;
+}
+.divs{
+    display: flex;
+    margin-top: 0px;
+    padding-top: opx;
+    flex-wrap: nowrap;
+}
+.link1{
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 45%;
+}
+.btn1{
+    background-color: white;
+    color: black;
+    margin-left: 47%;
+    height: 50px;
+    width: 110px;
+}
+.auhead{
+    text-align: center;
+    color: white;
+}
+.auther{
+    height: 400px;
+    width: 300px;
+    border: solid;
+}
+.para2{
+    color: white;
+}
+.authors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.final{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.clr{
+    color: white;
+}
+@media (max-width:992px){
+    .header{
+        padding: 1.3rem 5%;
+    }
+
+}
+
+ @media (max-width:760px){
+    .icons{
+        display: flex;
+        margin-right: 30%;
+    }
+    #closeIcon{
+        display: none;
+    }
+    #check:checked~.icons #menuIcon{
+        display: none;
+    }
+    #check:checked~.icons #closeIcon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: gainsboro;
+        display: none;
+    }
+    #check:checked~.navbar{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 1.5rem 0px;
+    }
+    .divs{
+        flex-wrap: wrap;
+    }
+    .authors{
+        flex-wrap: wrap;
+    }
+ }
